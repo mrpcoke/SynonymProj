@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}Synonym Search Form {% endblock %}
+
+{% block head %}
+    <link rel="stylesheet" href="../static/style.css">
+{% endblock %}
+
+
+{% block content %}
+<form action="#" method="POST">
+    <input type="text" name="txtSearch" id="txtSearch" required placeholder="Searh Word">
+    <input type="submit" name="submit" id="btnSubmit" value="Search">
+</form>
+<div class="results">
+
+</div>
+
+{% endblock %}

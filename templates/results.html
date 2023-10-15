@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %} Synonym Results {% endblock %}
+
+{% block head %}
+
+
+{% endblock %}
+
+
+{% block content %}
+<h2>Synonym Results</h2> 
+<ul>
+{% for item in theword["synonyms"] %}
+
+    <li class="listitems">{{ item.word }}</li>
+
+ 
+{% endfor %}
+</ul>
+{% endblock %}
